@@ -1,1 +1,52 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="survey-container">
+    <h1>Employee Satisfaction Survey</h1>
+    <form id="survey-form">
+        <!-- Question 1: Text input -->
+        <div class="question">
+            <label for="name">1. What is your name?</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- Question 2: Radio buttons -->
+        <div class="question">
+            <label>2. How satisfied are you with your work environment?</label><br>
+            <input type="radio" id="satisfaction-1" name="satisfaction" value="Very Satisfied">
+            <label for="satisfaction-1">Very Satisfied</label><br>
+            <input type="radio" id="satisfaction-2" name="satisfaction" value="Satisfied">
+            <label for="satisfaction-2">Satisfied</label><br>
+            <input type="radio" id="satisfaction-3" name="satisfaction" value="Neutral">
+            <label for="satisfaction-3">Neutral</label><br>
+            <input type="radio" id="satisfaction-4" name="satisfaction" value="Dissatisfied">
+            <label for="satisfaction-4">Dissatisfied</label><br>
+            <input type="radio" id="satisfaction-5" name="satisfaction" value="Very Dissatisfied">
+            <label for="satisfaction-5">Very Dissatisfied</label><br>
+        </div>
+
+        <!-- Question 3: Textarea -->
+        <div class="question">
+            <label for="comments">3. Please provide any additional comments:</label><br>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
